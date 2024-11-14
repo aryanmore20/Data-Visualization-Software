@@ -7,38 +7,31 @@ Java Data Visualization project designed to make histogramming, plotting, and fi
 - Fitting routines using Minuit
 - GUI tools for easily editing plot attributes and for fitting
 
-# Examples
-Try out the [demo jar](https://github.com/gavalian/groot/raw/master/jars/GrootDemo.jar) and check out the examples on our [Wiki](https://github.com/gavalian/groot/wiki "GROOT Wiki"). 
-To run the example: Simply double click on the jar if you're a mac user, or if you're a linux user run ```java -jar GrootDemo.jar```
+1D and 2D Histograms :
+Histograms represent data distribution by binning data points and plotting them as bars. In 1D histograms, the x-axis represents bins, and the y-axis represents frequency counts within each bin. 2D histograms extend this concept, using two axes (x, y) to represent two variables, with bin counts represented by color intensity or bar height.
 
-<img src="https://github.com/gavalian/groot/blob/master/images/multipad.png" width="800">
-<img src="https://github.com/gavalian/groot/blob/master/images/histogram2d_demo.png" width="400">
-<img src="https://github.com/gavalian/groot/blob/master/images/copyPaste.png" width="400">
-<img src="https://github.com/gavalian/groot/blob/master/images/totalcs_ppbar.png" width="800">
+Graph Errors : 
+Histograms often include error bars to show statistical uncertainty. Common error types:
+1. Poisson Errors: Typically used for counts in each bin, especially relevant when dealing with small data samples.
+2. Systematic Errors: Can be incorporated if additional uncertainties are known.
+3. GraphErrors: Tools or classes for adding and customizing error bars, useful in plotting and fitting.
 
-# groot 4
-groot is getting an updated plotting package. Many improvements with plotting and new features.
-This version (version=4) has many improvements allowing to produce article and presentation 
-ready figures, supports PDF and SVG output.
+Fitting Routines (Minuit) :
+Fitting routines are used to find the parameters that best match a histogram to a model. Minuit is a commonly used minimization tool in scientific computing:
+1. Likelihood and Chi-Square Fitting: Using Minuit for various fitting techniques (like least squares or maximum likelihood).
+2. Parameter Optimization: Minuit can adjust parameters to minimize residuals or optimize the fit function.
+3. Error Estimation: Includes functionality to calculate parameter uncertainties and error contours.
 
-<img src="https://github.com/gavalian/groot/blob/master/images/groot4_example_1.png" width="800">
+GUI Tools for Plotting and Fitting :
+Interactive GUI tools simplify histogram plotting and fitting processes by providing options to modify attributes visually.
+1. Attribute Editing: Customize colors, labels, and axis limits.
+2. Fitting Interface: Interactive tools for selecting fit functions and adjusting fit parameters.
+3. Real-time Plot Updates: View adjustments to fit and plot attributes instantly.
 
-In new version there are few new graph types, commonly used in analysis. Here is an example of Bar graph.
+These features are often found in data analysis environments or specialized libraries like ROOT (for high-energy physics) or matplotlib (Python), which provide high-level interfaces for scientific plots and data visualization.
 
-<img src="https://github.com/gavalian/groot/blob/master/images/bar_graph_example.png" width="800">
 
-New canvas styles are imeplemented with preset configuration for plotting related plots.
 
-<img src="https://github.com/gavalian/groot/blob/master/images/multiplot_example.png" width="800">
 
-# Installation
-Simply add this [library jar](https://github.com/gavalian/groot/raw/master/jars/) to your build path in an IDE.
 
-# Requirements
-Java 1.8 or greater
 
-# Documentation
-Check out our [Wiki](https://github.com/gavalian/groot/wiki "GROOT Wiki")!
-
-# Feature requests and contributions
-One of the best ways to contribute is to give us feature requests and bug reports on the [issues page](https://github.com/gavalian/groot/issues "GROOT Issues page")! 
