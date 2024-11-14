@@ -1,4 +1,4 @@
-# groot
+# Data Visualization
 Java Data Visualization project designed to make histogramming, plotting, and fitting accessible for Java users. 
 ## Features
 - Histograms 1D/2D
